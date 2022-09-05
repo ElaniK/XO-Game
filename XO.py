@@ -21,7 +21,7 @@ def gamer_step(player_token):
     while True:
         value = input('Сделайте ход' + ' ' + player_token + ' ')
         if not (value in '123456789'):
-            print('Ошибка, выберите свободную клетку')
+            print('Ошибка ввода, повторите.')
             continue
         value = int(value)
         if str(desk[value - 1]) in 'xo':
