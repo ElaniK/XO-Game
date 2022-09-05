@@ -17,7 +17,6 @@ def draw_desk():
     print("-------------")
 
 
-
 def gamer_step(player_token):
     while True:
         value = input('Сделайте ход' + ' ' + player_token + ' ')
@@ -37,7 +36,7 @@ def ckeck_win():
         if (desk[each[0] - 1]) == (desk[each[1] - 1]) == (desk[each[2] - 1]):
             return desk[each[1] - 1]
     else:
-            return False
+        return False
 
 
 def main():
@@ -58,5 +57,6 @@ def main():
         if counter > 8:
             draw_desk()
             print('Ничья!')
+
 
 main()
